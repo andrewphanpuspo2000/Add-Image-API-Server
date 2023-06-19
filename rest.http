@@ -1,0 +1,21 @@
+###
+GET http://localhost:8000/api/information
+
+
+###
+POST http://localhost:8000/api/information
+Content-Type: application/json
+
+{
+    "itemName":"Car",
+    "url":"https://images.drive.com.au/driveau/image/upload/t_wp-default/v1/cms/uploads/jjslyagf8e3gcny2doyy",
+    "comment":"new"
+}
+###
+PATCH http://localhost:8000/api/information
+Content-Type: application/json
+
+{
+    "_id":"648f09c9913e0bf7f049353f",
+    "comment":"looks great"
+}
