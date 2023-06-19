@@ -3,7 +3,7 @@ import itemSchema from "./taskSchema.js";
 export const addItem = (obj) => {
   return itemSchema(obj).save();
 };
-
+//get all the items
 export const getAllItem = () => {
   return itemSchema.find();
 };
@@ -14,7 +14,7 @@ export const addComment = async ({ _id, comment }) => {
 
   return itemSchema.findByIdAndUpdate(_id, { comment: tempItem.comment });
 };
-
+//delete item
 export const deleteItem = () => {
   return itemSchema.find();
 };
