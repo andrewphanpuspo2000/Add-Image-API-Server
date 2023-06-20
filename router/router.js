@@ -37,7 +37,7 @@ router.patch("/", async (req, res) => {
     console.log(result);
     res.json({
       status: "success",
-      informations: "information has been updated",
+      informations: "Comment has been updated",
     });
   } catch (error) {
     console.log(error.message);
